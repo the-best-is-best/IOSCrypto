@@ -4,21 +4,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "kmmcrypto",
+    name: "IOSCrypto",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "kmmcrypto",
-            targets: ["kmmcrypto"]),
+            name: "IOSCrypto",
+            targets: ["IOSCrypto"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "kmmcrypto"),
-        .testTarget(
-            name: "kmmcryptoTests",
-            dependencies: ["kmmcrypto"]
-        ),
+            name: "IOSCrypto"),
+    
     ]
 )
